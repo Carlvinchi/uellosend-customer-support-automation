@@ -1,0 +1,24 @@
+UelloSend AI Customer Support Assistant
+
+We are proud to release UelloAgent, AI agents built to automate customer support operations.
+
+Highlevel Overview
+
+The system is made of two agents:
+
+UelloSendAgent: is an LLM augmented with tools to complete customer requests like password reset, account verification and fixing credit top up issues on UelloSend platform. 
+This agent was developed using Google Generative AI SDK
+
+QueryAgent: is an LLM powered with Retrieval-Augmented Generation (RAG) pipeline to enable it respond to inquiry requests with contextually relevant answers.
+This agent was developed using  OpenAI SDK and OpenRouter API
+
+
+The two agents are exposed to clients via FastAPI server endpoints. The FastAPI server has rate limit implemented using slowapi package
+
+A simple frontend has been developed to consume the APIs, headover to uellosend.com to try it out. Locate the floating button on the site and start chatting.
+
+The implementation uses both system memory and redis to maintain stateful interactions between client and server.
+
+Pydantic logfire is used to log all server usage information
+
+The whole system was developed using microservice architecture and deployed using docker on a vm on uvitechcloud.com.

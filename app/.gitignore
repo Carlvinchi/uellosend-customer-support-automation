@@ -1,0 +1,9 @@
+.idea/
+__pycache__/
+.1.env
+commands.txt
+main1.py
+todo.txt
+.prod1.env
+query_agent.db
+uellosend_agent.db

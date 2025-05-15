@@ -1,0 +1,9 @@
+.idea/
+__pycache__/
+.env
+2.txt
+commands.txt
+main1.py
+todo.txt
+.prod.env
+.gitignore
